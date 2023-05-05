@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=width=device-width, initial-scale=1.0>
+    <title>Document</title>  
+  </head>
+<body>
+   <h1>Funções</h1>
+    <script>
+	   //retorno de valores
+	   function obterDiaSemana(){
+	     return new Date().getDay()
+	   }
+	   obterDiaSemana()
+	   
+	   //let dia = obterDiaSemana()
+	   //console.log(dia)
+	   
+	   console.log(obterDiaSemana())
+	   
+	   function somar(n1 = 0, n2 = 0){
+	     //let _n1 = n1 || 0
+         //let _n2 = n2 || 0		 
+	     //return _n1 + _n2
+		 return n1 + n2
+	   }
+	   let soma = somar(30,16)
+	   console.log(soma)
+	   
+	   console.log(somar(4,6))
+	   console.log(somar(10))
+	   console.log(somar(40))
+	   console.log(somar())
+	   
+	</script>
+</body>
+</html>

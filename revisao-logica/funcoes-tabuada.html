@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=width=device-width, initial-scale=1.0>
+    <title>Document</title>  
+  </head>
+<body>
+   <h1>Funções - tabuada</h1>
+   
+   <button onclick="mostrarTabuada()">Monstrar Tabuada</button>
+   <button onclick="limparTabuada()">Limpar Tabuada</button>
+   <div id="output"></div>
+   
+   <script>
+	  let numero = parseInt(prompt("Digite um número"))
+	 	  
+	  let msg = ""
+	  function mostrarTabuada(){
+		 for(let i = 0; i <= 1000; i++){
+	       msg += `${numero} x ${i} = ${(numero * i)} <br>`
+		 }
+		 
+		 output.innerHTML = msg
+	  }
+	  
+	  function limparTabuada(){
+	     output.innerHTML = ""
+	  }
+	  
+	</script>
+</body>
+</html>

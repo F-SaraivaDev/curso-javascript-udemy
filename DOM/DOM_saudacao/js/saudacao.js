@@ -17,7 +17,10 @@
 		elemento.innerHTML += "<b>" + nomeUsuario + "</b>"
 	
 	}else{
-		elemento.parentElement.style.display = "none"
+		//elemento.parentElement.style.display = "none"
+		//lemento.remove()
+		const elementoParaRemover = elemento.parentElement
+		elementoParaRemover.parentElement.removeChild(elementoParaRemover)
 	}
 	console.log(elemento)
 })()	

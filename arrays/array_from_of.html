@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=width=device-width, initial-scale=1.0>
+    <title>Document</title>  
+  </head>
+<body>
+   <p>Ut dolor eros, pulvinar sit amet rhoncus a, dignissim nec leo. 
+   In nec lectus rhoncus, consectetur tortor quis, bibendum orci.</p>
+   <p>Ut dolor eros, pulvinar sit amet rhoncus a, dignissim nec leo. 
+   In nec lectus rhoncus, consectetur tortor quis, bibendum orci.</p>
+   <p>Ut dolor eros, pulvinar sit amet rhoncus a, dignissim nec leo. 
+   In nec lectus rhoncus, consectetur tortor quis, bibendum orci.</p>
+   <p>Ut dolor eros, pulvinar sit amet rhoncus a, dignissim nec leo. 
+   In nec lectus rhoncus, consectetur tortor quis, bibendum orci.</p>
+   
+   <script>
+       const vetor1 = new Array(3)
+	   console.log(vetor1)
+	   console.log(vetor1.length)
+	   
+	   const vetor3 = Array.of(3)
+	   console.log(vetor3)
+	   console.log(vetor3.length)
+	   
+	   const vetor2 = Array.from(vetor1)
+	   vetor2.push(4,5)
+	   //console.log(vetor2)
+	   
+	   let paragrafos = document.querySelectorAll('p')
+	   console.log(paragrafos)
+	   console.log(paragrafos.length)
+	   /*
+	   paragrafos.forEach(function(p, i){
+	      p.textContent = `${++i} - ${p.textContent}`
+	   })*/
+	   
+	   paragrafos = Array.from(paragrafos)
+	   
+	   paragrafos.map(function(p, i){
+	      p.textContent = `${++i} - ${p.textContent}`
+	   })
+	   
+   </script>
+</body>
+</html>
